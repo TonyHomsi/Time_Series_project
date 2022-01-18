@@ -664,3 +664,103 @@
 2022-01-17 16:14:03,524:INFO:Importing untrained model
 2022-01-17 16:14:03,536:INFO:Isolation Forest Imported succesfully
 2022-01-17 16:14:03,548:INFO:Fitting Model
+2022-01-17 16:14:03,999:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0)
+2022-01-17 16:14:03,999:INFO:create_models() succesfully completed......................................
+2022-01-17 16:14:04,000:INFO:Uploading results into container
+2022-01-17 16:14:04,000:INFO:Uploading model into container now
+2022-01-17 16:14:04,001:INFO:create_model_container: 1
+2022-01-17 16:14:04,001:INFO:master_model_container: 1
+2022-01-17 16:14:04,001:INFO:display_container: 2
+2022-01-17 16:14:04,001:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0)
+2022-01-17 16:14:04,001:INFO:create_model() succesfully completed......................................
+2022-01-17 16:14:04,100:INFO:Initializing assign_model()
+2022-01-17 16:14:04,100:INFO:assign_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0), transformation=False, score=True, verbose=True)
+2022-01-17 16:14:04,100:INFO:Checking exceptions
+2022-01-17 16:14:04,100:INFO:Determining Trained Model
+2022-01-17 16:14:04,100:INFO:Trained Model : Isolation Forest
+2022-01-17 16:14:04,100:INFO:Copying data
+2022-01-17 16:14:04,101:INFO:(559, 32)
+2022-01-17 16:14:04,101:INFO:assign_model() succesfully completed......................................
+2022-01-17 16:14:04,148:INFO:Initializing plot_model()
+2022-01-17 16:14:04,149:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=tsne, save=False, scale=1, system=True)
+2022-01-17 16:14:04,149:INFO:Checking exceptions
+2022-01-17 16:14:04,149:INFO:Preparing display monitor
+2022-01-17 16:14:04,156:INFO:Preloading libraries
+2022-01-17 16:14:04,168:INFO:Copying training dataset
+2022-01-17 16:14:04,169:INFO:Plot type: tsne
+2022-01-17 16:14:04,217:INFO:SubProcess assign_model() called ==================================
+2022-01-17 16:14:04,218:INFO:Initializing assign_model()
+2022-01-17 16:14:04,218:INFO:assign_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0), transformation=True, score=False, verbose=False)
+2022-01-17 16:14:04,218:INFO:Checking exceptions
+2022-01-17 16:14:04,218:INFO:Determining Trained Model
+2022-01-17 16:14:04,218:INFO:Trained Model : Isolation Forest
+2022-01-17 16:14:04,218:INFO:Copying data
+2022-01-17 16:14:04,218:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2022-01-17 16:14:04,219:INFO:(559, 31)
+2022-01-17 16:14:04,219:INFO:assign_model() succesfully completed......................................
+2022-01-17 16:14:04,219:INFO:SubProcess assign_model() end ==================================
+2022-01-17 16:14:04,222:INFO:Getting dummies to cast categorical variables
+2022-01-17 16:14:04,222:INFO:Fitting TSNE()
+2022-01-17 16:14:07,601:INFO:Rendering Visual
+2022-01-17 16:14:08,534:INFO:Visual Rendered Successfully
+2022-01-17 16:14:08,624:INFO:plot_model() succesfully completed......................................
+2022-01-17 16:14:08,659:INFO:Initializing save_model()
+2022-01-17 16:14:08,659:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0), model_name=iforest_model, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=None,
+                                fill_value_numerical=Non...
+                ('scaling', 'passthrough'), ('P_transform', 'passthrough'),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-01-17 16:14:08,659:INFO:Adding model into prep_pipe
+2022-01-17 16:14:08,717:INFO:iforest_model.pkl saved in current working directory
+2022-01-17 16:14:08,723:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=None,
+                                fill_value_numerical=Non...
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=2185, verbose=0)]],
+         verbose=False)
+2022-01-17 16:14:08,723:INFO:save_model() successfully completed......................................
+2022-01-17 16:14:08,838:INFO:Initializing load_model()
+2022-01-17 16:14:08,839:INFO:load_model(model_name=iforest_model, platform=None, authentication=None, verbose=True)
